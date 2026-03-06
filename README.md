@@ -28,3 +28,21 @@ This project demonstrates a complete CI/CD workflow to automate the deployment o
 * **SSH Setup:** Passwordless SSH authentication configured between the Jenkins server and the Remote node.
 * **Jenkins Plugins:** Installed "Ansible" and "Publish Over SSH" plugins.
 * **Sudo Permissions:** Configured `visudo` to allow the Jenkins user to execute Ansible tasks on the remote host.
+
+## 📸 Project Screenshots & Proof of Concept
+
+### 1. Jenkins Build History
+Successfully automated multiple builds, showing the transition from initial failures to a stable, green build history.
+![Jenkins Build History](screenshots/Last%20successful%20build.png)
+
+### 2. Jenkins Console Output
+A detailed look at the Jenkins console logs, confirming the Ansible playbook execution and the final successful status.
+![Jenkins Console Logs](screenshots/Finished%20SUCCESS.png)
+
+### 3. Deployed Ubuntu Apache Server
+The final result: the web application is live and running successfully on the target Ubuntu Virtual Machine.
+![Live Web Server](screenshots/Shows%20the%20final%20Ubuntu%20Apache%20Server.png)
+
+### 4. Environment Connectivity Check
+Verification that the IP address is connected successfully and the environment is ready for deployment.
+![Environment Check](screenshots/Ready%20for%20Deployment.png)
