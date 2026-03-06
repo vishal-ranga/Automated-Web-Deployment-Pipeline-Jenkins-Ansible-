@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal DevOps Server</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 15px;
+            width: 500px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 40px rgba(0,255,255,0.3);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #00ffff;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .status {
+            padding: 10px;
+            background: #00c853;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            background: #00ffff;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 Ubuntu Apache Server</h1>
+    <p>Deployed Successfully on Virtual Machine</p>
+
+    <div class="status">
+        Server Status: RUNNING ✅
+    </div>
+
+    <button onclick="showInfo()">Check Environment</button>
+
+    <footer>
+        © 2026 Vishal Ranga | DevOps Practice Lab
+    </footer>
+</div>
+
+<script>
+    function showInfo() {
+        alert("Apache Server is running on Ubuntu VM.\nIP Address Connected Successfully.\nReady for Deployment 🚀");
+    }
+</script>
+
+</body>
+</html>

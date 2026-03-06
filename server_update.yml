@@ -1,0 +1,21 @@
+---
+- name: Upload new code and restart service
+  hosts: webservers
+  become: true
+
+  vars:
+    app: apache2
+
+  tasks:
+
+    - name: Copy index file
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+        mode: '0644'
+
+    - name: Restart apache
+      service:
+        name: "{{ app }}"
+        state: restarted
+        enabled: yes
